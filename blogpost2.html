@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting My Portfolio Site - Jawad's Dev Journey</title>
+    <meta name="description" content="How Jawad began his portfolio site using React and Tailwind CSS.">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo-title">
+            <img src="img/mysite.jpg" alt="Jawad's Dev Journey Logo" class="logo">
+            <h1>Dev Journey</h1>
+        <button class="hamburger">☰</button>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="advertise.html">Advertise</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search Posts">
+                <button onclick="searchPosts()">Search</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post">
+        <div class="container">
+            <h2>Starting My Portfolio Site</h2>
+            <p class="meta">Author: Jawad | Date: January 15, 2025 | 5 min read</p>
+            <img src="img/portfolio.JPG" alt="New Project" class="post-image">
+            <div class="content">
+                <p>Last week, I decided it was time to build my own portfolio site to showcase my projects. I chose React for its component-based architecture and Tailwind CSS for rapid styling. The first step was setting up the project with Create React App and integrating Tailwind.</p>
+                <p>I started with a simple layout—navbar, hero section, and project cards. The challenge came when I tried to make it responsive. Adjusting the grid layout took some trial and error, but Tailwind’s utility classes made it manageable. I’m excited to see where this project takes me!</p>
+                <p>Next steps: Add animations and deploy to Netlify. Stay tuned!</p>
+            </div>
+            <h3>Related Posts</h3>
+            <div class="grid">
+                <article class="post-card fade-in">
+                    <h3>That Time I Chased a CSS Bug for Hours</h3>
+                    <p class="date">January 10, 2025</p>
+                    <p class="excerpt">A wild tale of a flexbox issue...</p>
+                    <a href="blogpost1.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Jawad's Dev Journey. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Jawadahmad9938">GitHub</a>
+                <a href="https://linkedin.com/in/jawad-ahmad-">LinkedIn</a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

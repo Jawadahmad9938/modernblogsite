@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawad's Dev Journey - Home</title>
+    <meta name="description" content="Follow Jawad's journey as a frontend and software developer—coding tips, bug fixes, and personal projects.">
+    <meta name="keywords" content="frontend developer, software development, coding journey, blog">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-title">
+                <img src="img/mysite.jpg" alt="Jawad's Dev Journey Logo" class="logo">
+                <h1>Dev Journey</h1>
+            </div>
+            <button class="hamburger">☰</button>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="advertise.html">Advertise</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search Posts">
+                    <button onclick="searchPosts()">Search</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Coding World</h2>
+            <p>Exploring frontend, software development, bugs, and my journey—one line of code at a time.</p>
+            <a href="blogs.html" class="cta-button">Explore My Blogs</a>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-posts">
+        <div class="container">
+            <h2>Latest Posts</h2>
+            <div class="grid" id="postGrid">
+                <article class="post-card fade-in">
+                    <img src="img/cssimage.png" alt="Debugging a Bug" loading="lazy">
+                    <div class="post-overlay">
+                        <h3>That Time I Chased a CSS Bug for Hours</h3>
+                        <p class="date">January 10, 2025</p>
+                        <p class="excerpt">A wild tale of a flexbox issue that taught me patience and precision...</p>
+                        <a href="blogpost1.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="post-card fade-in">
+                    <img src="img/portfolio.JPG" alt="New Project" loading="lazy">
+                    <div class="post-overlay">
+                        <h3>Starting My Portfolio Site</h3>
+                        <p class="date">January 15, 2025</p>
+                        <p class="excerpt">How I kicked off my latest project with React and Tailwind...</p>
+                        <a href="blogpost2.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Jawad's Dev Journey. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Jawadahmad9938">GitHub</a>
+                <a href="https://linkedin.com/in/jawad-ahmad-">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That Time I Chased a CSS Bug for Hours - Jawad's Dev Journey</title>
+    <meta name="description" content="A wild tale of debugging a CSS flexbox issue by Jawad, a frontend developer.">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-title">
+                <img src="img/mysite.jpg" alt="Jawad's Dev Journey Logo" class="logo">
+                <h1>Dev Journey</h1>
+            <button class="hamburger">☰</button>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="advertise.html">Advertise</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search Posts">
+                    <button onclick="searchPosts()">Search</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post">
+        <div class="container">
+            <h2>That Time I Chased a CSS Bug for Hours</h2>
+            <p class="meta">Author: Jawad | Date: January 10, 2025 | 6 min read</p>
+            <img src="img/cssimage.png" alt="Debugging a Bug" class="post-image">
+            <div class="content">
+                <p>A few weeks ago, I was working on a client project—a sleek portfolio site using flexbox for layout. Everything was going smoothly until I noticed that one of the child elements wasn’t aligning properly. The design looked off, and no matter how much I adjusted the margins, the problem persisted.</p>
+                <p>I spent hours digging into the CSS—checking for typos, tweaking `flex-direction`, and even rewriting the entire layout. It turned out the issue was a forgotten `flex-grow: 1` property that I’d overlooked. Once I added it, everything snapped into place. It was a humbling moment, but it taught me the importance of double-checking properties and using browser dev tools more effectively.</p>
+                <p>Lesson learned: Patience pays off, and a fresh pair of eyes (or a coffee break) can work wonders!</p>
+            </div>
+            <h3>Related Posts</h3>
+            <div class="grid">
+                <article class="post-card fade-in">
+                    <h3>Starting My Portfolio Site</h3>
+                    <p class="date">January 15, 2025</p>
+                    <p class="excerpt">How I kicked off my latest project with React...</p>
+                    <a href="blogpost2.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Jawad's Dev Journey. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Jawadahmad9938">GitHub</a>
+                <a href="https://linkedin.com/in/jawad-ahmad-">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
